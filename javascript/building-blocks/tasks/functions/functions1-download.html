@@ -33,9 +33,12 @@
     const para = document.createElement("p");
 
     // Add your code here
-    const randomNum = Math.floor(Math.random() * names.length);
-    const selectedName = names[randomNum];
-    para.textContent = selectedName;
+    function chooseName() {
+      const randomNum = Math.floor(Math.random() * names.length);
+      const selectedName = names[randomNum];
+      return selectedName;
+    }
+    para.textContent = chooseName();
     // Don't edit the code below here!
 
     const section = document.querySelector("section");
