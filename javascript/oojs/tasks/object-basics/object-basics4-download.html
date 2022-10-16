@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Object basics: Task 4</title>
     <style>
       p {
@@ -17,23 +17,35 @@
   </head>
 
   <body>
-
-    <section class="preview">
-
-
-
-    </section>
-
+    <section class="preview"></section>
   </body>
   <script>
     const cat = {
-      name : 'Bertie',
-      breed : 'Cymric',
-      color : 'white',
-      greeting: function() {
-        console.log('Meow!');
-      }
-    }
-  </script>
+      name: "Bertie",
+      breed: "Cymric",
+      color: "white",
+      greeting: function () {
+        console.log("Meow!");
+      },
+    };
 
+    // Object constructor
+    function Cat(name, breed, color) {
+      (this.name = name),
+        (this.breed = breed),
+        (this.color = color),
+        (this.greeting = () => {
+          console.log(`Hello, said ${this.name} the ${this.breed}.`);
+        });
+    }
+
+    // Objects
+    const bertie = new Cat("Bertie", "Cymric", "White");
+    const neo = new Cat("Neo", "Domestic short hair", "Ginger");
+    const zara = new Cat("Zara", "Domestic short hair", "Calico");
+
+    console.log(bertie.greeting());
+    console.log(neo.greeting());
+    console.log(zara.greeting());
+  </script>
 </html>
