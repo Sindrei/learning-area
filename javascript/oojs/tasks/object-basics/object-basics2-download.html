@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Object basics: Task 2</title>
     <style>
       p {
@@ -17,26 +17,34 @@
   </head>
 
   <body>
-
-    <section class="preview">
-
-
-
-    </section>
-
+    <section class="preview"></section>
   </body>
   <script>
     let bandInfo;
 
     // Add your code here
+    const band = {
+      name: "System of a Down",
+      nationality: "Armenian American",
+      genre: "heavy metal",
+      Members: 4,
+      formed: 1994,
+      split: false,
+      albums: [
+        { name: "System of a Down", year: 1998 },
+        { name: "Toxicity", year: 2001 },
+        { name: "Steal This Album!", year: 2002 },
+        { name: "Mezmerize", year: 2005 },
+        { name: "Hypnotize", year: 2005 },
+      ],
+    };
 
-
+    bandInfo = `${band.name} is an ${band.nationality}, ${band.genre} formed in ${band.year}. Their first album was titled ${band.albums[0].name} and was released in ${band.albums[0]["year"]}.`;
     // Don't edit the code below here!
 
-    const section = document.querySelector('section');
-    let para1 = document.createElement('p');
+    const section = document.querySelector("section");
+    let para1 = document.createElement("p");
     para1.textContent = bandInfo;
     section.appendChild(para1);
   </script>
-
 </html>
