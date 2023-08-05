@@ -26,19 +26,22 @@ label span {
     text-align: right;
 }
 
-input, textarea {
+input,
+textarea {
     font: 1em sans-serif;
     width: 250px;
     box-sizing: border-box;
     border: 1px solid #999;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
     width: auto;
     border: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #000;
 }
 
@@ -51,7 +54,7 @@ textarea {
 fieldset {
     width: 250px;
     box-sizing: border-box;
-    margin-left: 136px;
+    margin-right: 136px;
     border: 1px solid #999;
 }
 
@@ -60,5 +63,5 @@ button {
 }
 
 label {
-  position: relative;
+    position: relative;
 }
