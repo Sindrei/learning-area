@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Basic controls: Task 2</title>
     <style>
       body {
@@ -24,16 +24,16 @@
         <legend>Who is your favorite pony?</legend>
         <ul>
           <li>
+            <input type="radio" name="pony" id="pinkie" value="pinkie" checked />
             <label for="pinkie">Pinkie Pie</label>
-
           </li>
           <li>
+            <input type="radio" name="pony" id="rainbow" value="rainbow" />
             <label for="rainbow">Rainbow Dash</label>
-
           </li>
           <li>
+            <input type="radio" name="pony" id="twilight" value="twilight" />
             <label for="twilight">Twilight Sparkle</label>
-
           </li>
         </ul>
       </fieldset>
@@ -41,17 +41,28 @@
         <legend>Hotdog preferences</legend>
         <ul>
           <li>
+            <input type="checkbox" name="hotdog" id="vegan" value="vegan" />
             <label for="vegan">Vegan</label>
-
           </li>
           <li>
+            <input type="checkbox" name="hotdog" id="onions" value="onions" />
             <label for="onions">Onions</label>
-
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="ketchup" value="ketchup" />
+            <label for="ketchup">Ketchup</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="mustard" value="mustard" />
+            <label for="mustard">Mustard</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotdog" id="pickles" value="pickles" />
+            <label for="Pickles">Pickles</label>
           </li>
         </ul>
       </fieldset>
       <button>Submit</button>
     </form>
   </body>
-
 </html>
